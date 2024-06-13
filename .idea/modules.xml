@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArraysLeetcodeQuestions/ArraysLeetcodeQuestions.iml" filepath="$PROJECT_DIR$/ArraysLeetcodeQuestions/ArraysLeetcodeQuestions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA_By_Sid.iml" filepath="$PROJECT_DIR$/.idea/DSA_By_Sid.iml" />
       <module fileurl="file://$PROJECT_DIR$/oneDArrays/oneDArrays.iml" filepath="$PROJECT_DIR$/oneDArrays/oneDArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/twoDArrays/twoDArrays.iml" filepath="$PROJECT_DIR$/twoDArrays/twoDArrays.iml" />
