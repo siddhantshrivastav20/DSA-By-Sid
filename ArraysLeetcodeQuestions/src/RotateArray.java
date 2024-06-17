@@ -24,18 +24,40 @@ import java.util.Arrays;
 public class RotateArray {
     public static void main(String[] args){
         int[] arr = {1,2,3,4,5,6,7};
-        solution(arr);
+        int k = 3;
+        solution2(arr,k);
         System.out.println(Arrays.toString(arr));
     }
 
-    static void solution(int[] nums){
-        int a = nums[nums.length -3];
-        int b = nums[nums.length-2];
-        int c = nums[nums.length-1];
-
-        for(int i=0; i< nums.length-3; i++){
-            nums[i+2] = nums[i];
+    static void solution(int[] nums, int k){
+        k = k%nums.length;
+        int[] temp = new int[k];
+        int pointer = temp.length-1;
+        for(int i= nums.length-1; i>=nums.length-k; i--){
+            temp[pointer] = nums[i];
+            pointer--;
         }
 
+        for(int i=nums.length-1; i>=k; i--){
+            nums[i] = nums[i-k];
+        }
+
+
+        for(int i =0; i<temp.length; i++){
+            nums[i] = temp[i];
+        }
+    }
+
+    static void solution2(int[] nums,int k){
+        int[] temp = new int[nums.length];
+        int n = nums.length;
+        for(int i =0; i<nums.length; i++){
+            int newIndex = (i+k)%n;
+            temp[newIndex] = nums[i];
+        }
+
+        for(int i =0; i<n; i++){
+            nums[i] = temp[i];
+        }
     }
 }
