@@ -2,7 +2,7 @@
 
 public class FactorialOfANumber {
     public static void main(String[] args){
-        int num = 7;
+        int num = 3;
         int ans = factorial(num);
         System.out.println(ans);
     }
@@ -12,7 +12,8 @@ public class FactorialOfANumber {
         if(num == 0 || num == 1){
             return 1;
         }
-        int fact = num * factorial(num-1);
+        int recusiveCall = factorial(num-1);
+        int fact = num * recusiveCall;
         return fact;
 
     }
