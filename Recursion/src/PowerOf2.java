@@ -9,8 +9,9 @@ public class PowerOf2 {
         if(power == 0){
             return 1;
         }
-        int calculate_power = powerOfTwo(power-1);
-        return (int) (Math.pow(2,calculate_power));
+
+        int ans = 2* powerOfTwo(power-1);
+        return ans;
 
     }
 }
