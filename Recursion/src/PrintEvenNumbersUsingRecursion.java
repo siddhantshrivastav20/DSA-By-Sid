@@ -1,4 +1,4 @@
-// Print all odd numbers from an array using recursion..
+// Print all odd numbers from an array using recursion.
 
 public class PrintEvenNumbersUsingRecursion {
     public static void main(String[] args){
